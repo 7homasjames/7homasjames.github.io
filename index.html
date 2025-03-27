@@ -222,12 +222,32 @@ rel="stylesheet" href="main.css" /> </head> <body>
     <div class="col col2">
         <h2>Aithical studios</h2>
         <p> An AI-driven content creation platform designed to revolutionize digital marketing by automating and optimizing content generation. By leveraging advanced AI tools such as ChatGPT for creative prompts, MidJourney for visual generation, and ElevenLabs for dynamic dialogues, Aithical enables businesses—especially small enterprises—to produce high-quality, engaging content at scale. The platform ensures real-time campaign optimization, creative flexibility across various formats, and cost-effective solutions, empowering brands to enhance their reach while reducing production costs and time delays.</p>
-	<iframe width="800" height="450" 
-	        src="https://www.youtube.com/embed/DRA2cHnpOkM" 
-	        frameborder="0" 
-	        allowfullscreen 
-	        style="display:block; margin:auto;">
-	</iframe>
+        <div class="video-container">
+          <iframe 
+            src="https://www.youtube.com/embed/DRA2cHnpOkM" 
+            frameborder="0" 
+            allowfullscreen>
+          </iframe>
+        </div>
+        
+        <style>
+        .video-container {
+          position: relative;
+          padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+          height: 0;
+          overflow: hidden;
+          max-width: 100%;
+          background: black;
+        }
+        
+        .video-container iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+        </style>
     </div>
     </div>
     </section>
